@@ -1,0 +1,421 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ATSI Event Shop</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg" />
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/slider-range.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Quick view -->
+    <div class="modal fade custom-modal" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12 mb-md-0 mb-sm-5">
+                            <div class="detail-gallery">
+                                <span class="zoom-icon"><i class="fi-rs-search"></i></span>
+                                <!-- MAIN SLIDES -->
+                                <div class="product-image-slider">
+                                    <figure class="border-radius-10">
+                                        <img src="{% static 'assets/imgs/shop/product-16-2.jpg' %}" alt="product image" />
+                                    </figure>
+                                    <figure class="border-radius-10">
+                                        <img src="{% static 'assets/imgs/shop/product-16-1.jpg' %}" alt="product image" />
+                                    </figure>
+                                    <figure class="border-radius-10">
+                                        <img src="{% static 'assets/imgs/shop/product-16-3.jpg' %}" alt="product image" />
+                                    </figure>
+                                    <figure class="border-radius-10">
+                                        <img src="{% static 'assets/imgs/shop/product-16-4.jpg' %}" alt="product image" />
+                                    </figure>
+                                    <figure class="border-radius-10">
+                                        <img src="{% static 'assets/imgs/shop/product-16-5.jpg' %}" alt="product image" />
+                                    </figure>
+                                    <figure class="border-radius-10">
+                                        <img src="{% static 'assets/imgs/shop/product-16-6.jpg' %}" alt="product image" />
+                                    </figure>
+                                    <figure class="border-radius-10">
+                                        <img src="{% static 'assets/imgs/shop/product-16-7.jpg' %}" alt="product image" />
+                                    </figure>
+                                </div>
+                                <!-- THUMBNAILS -->
+                                <div class="slider-nav-thumbnails">
+                                    <div><img src="{% static 'assets/imgs/shop/thumbnail-3.jpg' %}" alt="product image" /></div>
+                                    <div><img src="{% static 'assets/imgs/shop/thumbnail-4.jpg' %}" alt="product image" /></div>
+                                    <div><img src="{% static 'assets/imgs/shop/thumbnail-5.jpg' %}" alt="product image" /></div>
+                                    <div><img src="{% static 'assets/imgs/shop/thumbnail-6.jpg' %}" alt="product image" /></div>
+                                    <div><img src="{% static 'assets/imgs/shop/thumbnail-7.jpg' %}" alt="product image" /></div>
+                                    <div><img src="{% static 'assets/imgs/shop/thumbnail-8.jpg' %}" alt="product image" /></div>
+                                    <div><img src="{% static 'assets/imgs/shop/thumbnail-9.jpg' %}" alt="product image" /></div>
+                                </div>
+                            </div>
+                            <!-- End Gallery -->
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="detail-info pr-30 pl-30">
+                                <span class="stock-status out-stock"> Sale Off </span>
+                                <h3 class="title-detail"><a href="shop-product-right.html" class="text-heading">Seeds of Change Organic Quinoa, Brown</a></h3>
+                                <div class="product-detail-rating">
+                                    <div class="product-rate-cover text-end">
+                                        <div class="product-rate d-inline-block">
+                                            <div class="product-rating" style="width: 90%"></div>
+                                        </div>
+                                        <span class="font-small ml-5 text-muted"> (32 reviews)</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix product-price-cover">
+                                    <div class="product-price primary-color float-left">
+                                        <span class="current-price text-brand">$38</span>
+                                        <span>
+                                            <span class="save-price font-md color3 ml-15">26% Off</span>
+                                        <span class="old-price font-md ml-15">$52</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="detail-extralink mb-30">
+                                    <div class="detail-qty border radius">
+                                        <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
+                                        <span class="qty-val">1</span>
+                                        <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
+                                    </div>
+                                    <div class="product-extra-link2">
+                                        <button type="submit" class="button button-add-to-cart"><i class="fi-rs-shopping-cart"></i>Add to cart</button>
+                                    </div>
+                                </div>
+                                <div class="font-xs">
+                                    <ul>
+                                        <li class="mb-5">Vendor: <span class="text-brand">Nest</span></li>
+                                        <li class="mb-5">MFG:<span class="text-brand"> Jun 4.2025</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Detail Info -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header-area header-style-1 header-height-2">
+        <div class="mobile-promotion">
+            <span>Grand opening, <strong>up to 15%</strong> off all items. Only <strong>3 days</strong> left</span>
+        </div>
+        <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
+            <div class="container">
+                <div class="header-wrap">
+                    <div class="logo logo-width-1">
+                        <a href="{% url 'core:index' %}"><img src="{% static 'assets/imgs/theme/logo.svg' %}" alt="logo" /></a>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-style-2">
+                            <form action="{% url 'core:search' %}" method="GET">
+                                <input aria-label="Search" type="text" placeholder="Search for items..." name="q"/>
+                            </form>
+                        </div>
+                        <div class="header-action-right">
+                            <div class="header-action-2">
+                                <div class="header-action-icon-2">
+                                    <a class="mini-cart-icon" href="{% url 'core:cart' %}">
+                                        <img alt="Nest" src="{% static 'assets/imgs/theme/icons/icon-cart.svg' %}" />
+                                        <span class="pro-count blue cart-items-count">{{request.session.cart_data_obj|length}}</span>
+                                    </a>
+                                    <a href="{% url 'core:cart' %}"><span class="lable">Cart</span></a>
+                                    <div class="cart-dropdown-wrap cart-dropdown-hm2">
+                                        <div class="shopping-cart-footer">
+                                            <div class="shopping-cart-button">
+                                                <a href="{% url 'core:cart' %}" class="outline">View cart</a>
+                                                <a href="{% url 'core:checkout' %}">Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-action-icon-2">
+                                    <a href="{% url 'core:dashboard' %}">
+                                        <img class="svgInject" alt="Nest" src="{% static 'assets/imgs/theme/icons/icon-user.svg' %}" />
+                                    </a>
+                                    <a href="{% url 'core:dashboard' %}"><span class="lable ml-0">Account</span></a>
+                                    <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
+                                        <ul>
+                                            {% if request.user.is_authenticated %}
+                                            <li><a href="{% url 'core:dashboard' %}"><i class="fi fi-rs-user mr-10"></i>My Account</a></li>
+                                            {% endif %}
+                                            {% if request.user.is_authenticated %}
+                                            <li><a href="{% url 'userauths:sign-out' %}"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a></li>
+                                            {% else %}
+                                            <li><a href="{% url 'userauths:sign-in' %}"><i class="fi fi-rs-sign-in mr-10"></i>Sign in</a></li>
+                                            {% endif %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom header-bottom-bg-color sticky-bar">
+            <div class="container">
+                <div class="header-wrap header-space-between position-relative">
+                    <div class="logo logo-width-1 d-block d-lg-none">
+                        <a href="index.html"><img src="{% static 'assets/imgs/theme/logo.svg' %}" alt="logo" /></a>
+                    </div>
+                    <div class="header-nav d-none d-lg-flex">
+                        <div class="main-categori-wrap d-none d-lg-block">
+                        </div>
+                        <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="{% url 'core:category-list' %}">Categories <i class="fi-rs-angle-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="{% url 'core:category-list' %}">All categories</a></li>
+                                            <hr>
+                                            {% for c in categories %}
+                                            <li><a href="{% url 'core:category-product-list' c.cid %}">{{c.title}}</a></li>
+                                            {% endfor %}
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'core:product-list' %}">Products </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-action-icon-2 d-block d-lg-none">
+                        <div class="burger-icon burger-icon-white">
+                            <span class="burger-icon-top"></span>
+                            <span class="burger-icon-mid"></span>
+                            <span class="burger-icon-bottom"></span>
+                        </div>
+                    </div>
+                    <div class="header-action-right d-block d-lg-none">
+                        <div class="header-action-2">
+                            <div class="header-action-icon-2">
+                                <a class="mini-cart-icon" href="{% url 'core:cart' %}">
+                                    <img alt="Nest" src="{% static 'assets/imgs/theme/icons/icon-cart.svg' %}" />
+                                    <span class="pro-count white cart-items-count">{{request.session.cart_data_obj|length}}</span>
+                                </a>
+                                <div class="cart-dropdown-wrap cart-dropdown-hm2">
+                                    <div class="shopping-cart-footer">
+                                        <div class="shopping-cart-button">
+                                            <a href="{% url 'core:cart' %}">View cart</a>
+                                            <a href="{% url 'core:checkout' %}">Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{message.tags}}">
+                            <strong>{{ message }}</strong>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                <script>
+                    setTimeout (() => {
+                        $(".alert").alert("close");
+                        }, 3000)
+                </script>
+
+            </div>
+        </div>
+    </header>
+    <div class="mobile-header-active mobile-header-wrapper-style">
+        <div class="mobile-header-wrapper-inner">
+            <div class="mobile-header-top">
+                <div class="mobile-header-logo">
+                    <a href="index.html"><img src="{% static 'assets/imgs/theme/logo.svg' %}" alt="logo" /></a>
+                </div>
+                <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
+                    <button class="close-style search-close">
+                        <i class="icon-top"></i>
+                        <i class="icon-bottom"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-header-content-area">
+                <div class="mobile-search search-style-3 mobile-header-border">
+                    <form action="#">
+                        <input type="text" placeholder="Search for items…" />
+                        <button type="submit"><i class="fi-rs-search"></i></button>
+                    </form>
+                </div>
+                <div class="mobile-menu-wrap mobile-header-border">
+                    <!-- mobile menu start -->
+                    <nav>
+                        <ul class="mobile-menu font-heading">
+                        </ul>
+                    </nav>
+                    <!-- mobile menu end -->
+                </div>
+                <div class="mobile-header-info-wrap">
+                    <div class="single-mobile-header-info">
+                        <a href="page-contact.html"><i class="fi-rs-marker"></i> Our location </a>
+                    </div>
+                    <div class="single-mobile-header-info">
+                        <a href="page-login.html"><i class="fi-rs-user"></i>Log In / Sign Up </a>
+                    </div>
+                    <div class="single-mobile-header-info">
+                        <a href="#"><i class="fi-rs-headphones"></i>(+01) - 2345 - 6789 </a>
+                    </div>
+                </div>
+                <div class="mobile-social-icon mb-50">
+                    <h6 class="mb-15">Follow Us</h6>
+                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-facebook-white.svg' %}" alt="" /></a>
+                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-twitter-white.svg' %}" alt="" /></a>
+                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-instagram-white.svg' %}" alt="" /></a>
+                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-pinterest-white.svg' %}" alt="" /></a>
+                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-youtube-white.svg' %}" alt="" /></a>
+                </div>
+                <div class="site-copyright">Copyright 2025 © Nest. All rights reserved. Powered by AliThemes.</div>
+            </div>
+        </div>
+    </div>
+    <!--End header-->
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <footer class="main">
+        <section class="featured section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                        <div class="banner-left-icon d-flex align-items-center wow fadeIn animated">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-1.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Best prices & offers</h3>
+                                <p>Orders $50 or more</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                        <div class="banner-left-icon d-flex align-items-center wow fadeIn animated">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-2.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Free delivery</h3>
+                                <p>24/7 amazing services</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                        <div class="banner-left-icon d-flex align-items-center wow fadeIn animated">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-3.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Great daily deal</h3>
+                                <p>When you sign up</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                        <div class="banner-left-icon d-flex align-items-center wow fadeIn animated">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-4.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Wide assortment</h3>
+                                <p>Mega Discounts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                        <div class="banner-left-icon d-flex align-items-center wow fadeIn animated">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-5.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Easy returns</h3>
+                                <p>Within 30 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-none">
+                        <div class="banner-left-icon d-flex align-items-center wow fadeIn animated">
+                            <div class="banner-icon">
+                                <img src="{% static 'assets/imgs/theme/icons/icon-6.svg' %}" alt="" />
+                            </div>
+                            <div class="banner-text">
+                                <h3 class="icon-box-title">Safe delivery</h3>
+                                <p>Within 30 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container pb-30">
+            <div class="row align-items-center">
+                <div class="col-12 mb-30">
+                    <div class="footer-bottom"></div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <p class="font-sm mb-0">&copy; 2025, <strong class="text-brand">ATSI</strong> - HTML Ecommerce Template <br />All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Vendor JS-->
+    <script data-cfasync="false" src="{% static '/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/modernizr-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-migrate-3.3.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/slick.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.syotimer.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/wow.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/slider-range.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/perfect-scrollbar.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/magnific-popup.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/select2.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/waypoints.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/counterup.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/images-loaded.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/isotope.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/scrollup.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.vticker-min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.theia.sticky.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.elevatezoom.js' %}"></script>
+    <!-- Template  JS -->
+    <script src="{% static './assets/js/main.js' %}"></script>
+    <script src="{% static './assets/js/shop.js' %}"></script>
+    <script src="{% static './assets/js/function.js' %}"></script>
+</body>
+
+</html>
